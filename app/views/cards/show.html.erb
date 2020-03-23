@@ -1,0 +1,7 @@
+<div>Viewing Card: <%= @params[:id] %></div>
+<div>Card name: <%= @card.name %></div>
+<div>Card set: <%= @card.set %></div>
+<div>Card description: <%= @card.description %></div>
+<div>Card price: <%= @card.amount_cents %></div>
+
+<div><%= link_to "Go back", cards_path %></div>

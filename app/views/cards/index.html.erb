@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag params[:controller] %>
+<body>
+  <h1>
+    <div>Welcome to All Cards page</div>
+  </h1>
+  <div>
+    <div>Let's go, select a card to view</div>
+    <div class="child_wrapper">
+      <% @cards.each do |card| %>
+        <div>
+          <%= link_to "View card #{card.name}", card_path(card.id) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div>
+    <%= link_to "Create a new card", new_card_path %>
+  </div>
+</body>
