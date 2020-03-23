@@ -1,5 +1,5 @@
 {
-  "name": "ChildManager",
+  "name": "MTGPriceTracker",
   "private": true,
   "dependencies": {}
 }
